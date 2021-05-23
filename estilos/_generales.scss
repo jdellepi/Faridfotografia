@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Francois One', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  text-align: justify;
+  text-transform: none;
+  line-height: 1.6;
+  background-color: rgb(54, 54, 54);
+}
+
+h1 {
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  color: rgb(247, 242, 242);
+  font-size: 17px;
+}

@@ -1,0 +1,91 @@
+footer {
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__redes {
+  list-style: none;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__redes li .fa {
+  background: grey;
+  color: white;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 50px;
+  margin: 0px 10px;
+}
+
+@each $animal in instagram,
+facebook,
+twitter {
+  .footer__redes li .fa#{$animal}-icon {
+    background-image: url("../imagenes/#{$animal}.png");
+    background: grey;
+    color: white;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 50px;
+    margin: 0px 10px;
+  }
+}
+
+.footer__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__form input {
+  flex: 1 1 10px;
+  margin: 15px;
+  padding: 10px 10px;
+  border-color: white;
+  border-width: 3px;
+  border-radius: 5px;
+}
+
+.form__button {
+  color: white;
+  border: 0;
+  outline: 0;
+  background-image: linear-gradient(to top right, black, grey);
+}
+
+.form__button:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+}
+
+.form__button:active {
+  transform: translateY(3px);
+}
+
+@media (max-width: 600px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1050px) {
+  footer {
+    align-items: center;
+    justify-content: center;
+  }
+}
