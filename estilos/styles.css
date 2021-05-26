@@ -617,7 +617,7 @@ footer {
 /* QUIÉN SOY */
 .carousel-caption__text {
   color: #fff;
-  text-shadow: 3px 3px #363636;
+  text-shadow: 1px 1px #363636;
   font-size: 20px;
 }
 
