@@ -364,61 +364,15 @@
 
 /* QUIÉN SOY */
 
-$in : 2;
-// BUCLE
-
-@for $in from 1 through 2 {
-
-  .bucle-#{$in} {
-    background-color: #0f0101 * $in;
-    margin: 15px;
-    display: inline-block;
-    border-radius: 16px;
-    padding: 32px;
-    align-items: center;
-    border-top: 1px solid white;
-  }
+.carousel-caption__text{
+  color: #fff;
+  text-shadow: 3px 3px rgb(54, 54, 54);
+  font-size: 35px;
 }
 
-.section__items {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 1rem;
-  justify-content: center;
-  height: 100%;
-  padding: 50px 25px;
-  align-content: center;
+.carousel-caption__title{
+  color: rgb(54, 54, 54);
+  text-shadow: 1px 1px #fff;
+  font-size: 45px;
 }
 
-.items__carta {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  justify-content: space-between;
-  text-align: center;
-}
-
-.items__carta img {
-  width: 100%;
-  margin-top: 15px;
-}
-
-$font: (color: whitesmoke,
-  font-family: 'Francois One', sans-serif size: 16px,
-  line-height: 1.4,
-);
-
-
-.description {
-  color: map-get($font, color);
-  font-family: map-get($font, family);
-  font-size: map-get($font, size);
-  line-height: map-get($font, line-height);
-
-}
-
-@media (max-width: 600px) {
-  .section__items {
-    grid-template-columns: 1fr;
-  }
-}

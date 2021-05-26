@@ -8,11 +8,14 @@
   <meta name="description" content="Mi nombre es Farid Dumat Kelzi y soy estudiante de Fotografía">
   <meta name="keywords" content="estudiante, fotografía, amateur">
   <meta name="country" content="Argentina">
-  <link rel="icon" href="../Multimedia/logo.ico" />
+  <link rel="icon" href="../../Trabajo Final/Multimedia/logo.ico" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="../estilos/styles.css" />
   <title>Quién Soy</title>
 </head>
@@ -20,7 +23,7 @@
 <body>
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="../index.html">
         <img src="../Multimedia/logo.png" alt="" width="100" height="50" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -47,71 +50,63 @@
     </div>
   </nav>
 
-  <h1>Quién Soy</h1>
+  <h1>Quién Soy, en imágenes</h1>
 
-  <article class="bucle-1">
-    <p class="article1__texto1">
-      Mi nombre es Farid Dumat Kelzi <br />
-      Comencé hace unos años atrás a cargar en la mochila mi cámara de fotos.
-      Y hablo de "mi cámara" para darle identidad. Porque si bien todos
-      tenemos una en nuestro teléfono celular, que ésta sea un objeto
-      independiente al móvil, la hace distinta. Con el paso del tiempo,
-      descubrí que el obturador no sólo inmortalizaba un momento en una
-      imagen, sino que también me permitía contar una historia. Por lo tanto,
-      quise salir a la calle mucho más de lo que hacía antes, con la
-      convicción de poder relatar mucho más que una historia.
-    </p>
-  </article>
-
-  <section>
-    <div class="section__items">
-      <div class="items__carta">
-        <h2>Mi serie favorita</h2>
-        <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-          repudiandae Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Ad harum eos, praesentium quia facilis eveniet, provident quam
-        </p>
-        <div>
-          <img src="../Multimedia/THT.jpg" alt="TheHandmaidsTale" />
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="../Multimedia/91.jpg"
+          alt="Los Angeles"
+          width="100%"
+          height="100%"
+        />
+        <div class="carousel-caption">
+          <h3 class="carousel-caption__title">Zof, mi gran amigo</h3>
+          <p class="carousel-caption__text">Mi compañero de todos los días</p>
         </div>
       </div>
-      <div class="items__carta">
-        <h2>Mi Disco Favorito</h2>
-        <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus qui
-          dolorem
-        </p>
-        <div>
-          <img src="../Multimedia/arctic.png" alt="ArcticMonkeys" />
+      <div class="carousel-item">
+        <img
+          src="../Multimedia/92.jpg"
+          alt="Chicago"
+          width="100%"
+          height="100%"
+        />
+        <div class="carousel-caption">
+          <h3 class="carousel-caption__title">Mi gran pasión</h3>
+          <p class="carousel-caption__text">Más que un equipo de fútbol, Rosario Central</p>
         </div>
       </div>
-      <div class="items__carta">
-        <h2>Mi Foto Favorita</h2>
-        <p class="description">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non rem
-          autem voluptatum laudantium sapiente quo provident eaque perferendis
-          dolor doloribus voora, quo nobis.
-        </p>
-        <div>
-          <img src="../Multimedia/mejorfoto.jpg" alt="FotoBajoLluvia" />
+      <div class="carousel-item">
+        <img
+          src="../Multimedia/93.jpg"
+          alt="New York"
+          width="100%"
+          height="100%"
+        />
+        <div class="carousel-caption">
+          <h3 class="carousel-caption__title">Mi gran escape a tierra</h3>
+          <p class="carousel-caption__text">En vivo o en una playlist, que la música no me falte ningún día</p>
         </div>
       </div>
     </div>
-  </section>
-
-  <article class="bucle-2">
-    <p class="article2__texto2">
-      Hoy, en mi segundo año de la carrera de Fotografía, acompaño esa
-      inspiración que me encontró hace unos años atrás, con algo de técnica:
-      un hecho es una realidad concreta pero dependiendo del lugar en el que
-      uno se pare para contarlo, quien lo observe, podrá interpretar una
-      versión particular del mismo. Y eso es lo que trato de hacer. Los invito
-      a aventurarse. Despojarse. Y conocerme <br />
-    </p>
-  </article>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+  crossorigin="anonymous"
+></script>
 </html>
