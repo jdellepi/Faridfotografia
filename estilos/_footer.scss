@@ -16,8 +16,8 @@ footer {
 }
 
 .footer__redes li .fa {
-  background: grey;
-  color: white;
+  background: $grey;
+  color: $whitelight;
   height: 50px;
   width: 50px;
   text-align: center;
@@ -31,8 +31,8 @@ facebook,
 twitter {
   .footer__redes li .fa#{$animal}-icon {
     background-image: url("../imagenes/#{$animal}.png");
-    background: grey;
-    color: white;
+    background: $grey;
+    color: $whitelight;
     height: 50px;
     width: 50px;
     text-align: center;
@@ -51,19 +51,19 @@ twitter {
   flex: 1 1 10px;
   margin: 15px;
   padding: 10px 10px;
-  border-color: white;
+  border-color: $whitelight;
   border-width: 3px;
   border-radius: 5px;
 }
 
 .form__button {
-  color: white;
+  color: $whitelight;
   border: 0;
   outline: 0;
   background-image: linear-gradient(to top right, black, grey);
   width: 300px;
   height: 50px;
-  }
+}
 
 .form__button:hover {
   cursor: pointer;
