@@ -1,10 +1,10 @@
 footer {
-  padding: 0px 15px;
+  padding: 0px 2px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-}
+  }
 
 .footer__redes {
   list-style: none;
@@ -24,6 +24,29 @@ footer {
   border-radius: 50%;
   line-height: 50px;
   margin: 0px 10px;
+}
+
+.footer__redes li .fa:hover{
+  opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 @each $animal in instagram,
