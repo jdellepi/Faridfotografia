@@ -111,7 +111,7 @@
 }
 
 .card__anuncio {
-  font-size: 30px;
+  font-size: 22px;
   color: rgb(8, 1, 7);
   margin-bottom: 8px;
   text-align: center;
@@ -131,7 +131,7 @@
 
 .card__date {
   color: $grey;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   margin-bottom: 16px;
   text-align: center;
@@ -206,6 +206,9 @@
   .background {
     width: 55%;
     margin-bottom: 40px;
+  }
+  .h1{
+    font-size: 25px;
   }
 }
 

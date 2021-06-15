@@ -23,11 +23,19 @@ h1 {
   color: #f7f2f2;
   margin-top: 85px;
   margin-bottom: 15px;
+  font-size: 25px;
 }
 
 h2 {
   color: #f7f2f2;
   text-align: center;
+  font-size: 22px;
+}
+
+h3 {
+  color: #f7f2f2;
+  text-align: center;
+  font-size: 19px;
 }
 
 p {
@@ -360,7 +368,7 @@ footer {
 }
 
 .card__anuncio {
-  font-size: 30px;
+  font-size: 22px;
   color: #080107;
   margin-bottom: 8px;
   text-align: center;
@@ -381,7 +389,7 @@ footer {
 
 .card__date {
   color: #363636;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   margin-bottom: 16px;
   text-align: center;
@@ -459,6 +467,9 @@ footer {
   .background {
     width: 55%;
     margin-bottom: 40px;
+  }
+  .h1 {
+    font-size: 25px;
   }
 }
 
